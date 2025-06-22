@@ -18,7 +18,7 @@ This project leverages a modern tech stack to ensure robustness and scalability:
     * Docker: A containerization tool for consistent development and deployment environments.
     * GitHub Actions (or similar CI/CD platforms): For automating continuous integration and continuous deployment pipelines.
 
-# Team roles
+# Team Roles
 1. Business Analyst (BA)
 
     Responsibilities: Understands customer business needs and translates them into clear requirements for the development team. Acts as a bridge between business stakeholders and the technical team to ensure the final product delivers maximum value.
@@ -163,5 +163,5 @@ Here are some common tools that can be used to set up CI/CD pipelines for the Ai
     Jenkins: An open-source automation server that provides hundreds of plugins to support building, deploying, and automating any project. It's highly configurable and widely used for complex CI/CD setups.
 
     GitLab CI/CD: Built directly into GitLab, it provides a comprehensive solution for continuous integration, delivery, and deployment, using .gitlab-ci.yml files for configuration.
-    
+
     Travis CI / CircleCI: Popular cloud-based CI/CD services that integrate well with GitHub and other version control systems, offering robust automation features.
