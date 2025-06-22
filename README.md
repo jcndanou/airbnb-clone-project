@@ -108,3 +108,18 @@ Key Entities and Their Relationships
             A Payment is associated with one Booking.
             A Payment is made by one User.
 
+# Feature Breakdown
+    User Management
+    This feature involves implementing a secure system for user registration, authentication, and profile management. It's crucial for the project as it allows users to create accounts, log in securely, and manage their personal information, forming the foundation for all user-specific interactions on the platform.
+
+    Property Management
+    This encompasses developing functionalities for property listing creation, updates, and retrieval. It's essential for hosts to be able to efficiently list their properties, provide detailed information, and manage their availability, directly contributing to the platform's inventory and appeal.
+
+    Booking System
+    This feature involves creating a robust mechanism that allows users to reserve properties and manage their booking details. It's at the core of a booking platform, enabling the primary transaction flow between guests and hosts, ensuring properties can be reserved and managed effectively.
+
+    Payment Processing
+    This integrates a system to securely handle transactions and record payment details. It's vital for monetizing the platform and ensuring that financial transactions between guests and hosts are processed smoothly and reliably.
+
+    Review System
+    This allows users to leave reviews and ratings for properties after their stay. It contributes significantly to building trust and transparency within the platform, helping future guests make informed decisions and providing valuable feedback for hosts.
