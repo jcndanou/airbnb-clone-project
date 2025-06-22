@@ -70,3 +70,41 @@ This project leverages a modern tech stack to ensure robustness and scalability:
     7. Docker: A containerization tool used for consistent development and deployment environments, ensuring the application runs uniformly across different machines.
 
     8. CI/CD Pipelines: Automated pipelines (using tools like GitHub Actions, not explicitly named here but implied by CI/CD context) for testing and deploying code changes, ensuring efficient and reliable delivery of updates.
+
+# Database Design
+Key Entities and Their Relationships
+
+    Users
+        Important Fields: user_id (Primary Key), username, email, password_hash, registration_date
+        Relationships:
+            A User can have multiple Properties.
+            A User can make multiple Bookings.
+            A User can write multiple Reviews.
+            A User can make multiple Payments.
+
+    Properties
+        Important Fields: property_id (Primary Key), title, description, location, price_per_night, owner_id (Foreign Key to Users)
+        Relationships:
+            A Property belongs to one User (its owner).
+            A Property can have multiple Bookings.
+            A Property can receive multiple Reviews.
+
+    Bookings
+        Important Fields: booking_id (Primary Key), property_id (Foreign Key to Properties), user_id (Foreign Key to Users), check_in_date, check_out_date, total_price, status
+        Relationships:
+            A Booking belongs to one Property.
+            A Booking is made by one User.
+            A Booking can be associated with one Payment.
+
+    Reviews
+        Important Fields: review_id (Primary Key), property_id (Foreign Key to Properties), user_id (Foreign Key to Users), rating, comment, review_date
+        Relationships:
+            A Review is for one Property.
+            A Review is written by one User.
+
+    Payments
+        Important Fields: payment_id (Primary Key), booking_id (Foreign Key to Bookings), user_id (Foreign Key to Users), amount, payment_date, status
+        Relationships:
+            A Payment is associated with one Booking.
+            A Payment is made by one User.
+
