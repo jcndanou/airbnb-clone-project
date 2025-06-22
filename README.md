@@ -109,6 +109,7 @@ Key Entities and Their Relationships
             A Payment is made by one User.
 
 # Feature Breakdown
+
     User Management
     This feature involves implementing a secure system for user registration, authentication, and profile management. It's crucial for the project as it allows users to create accounts, log in securely, and manage their personal information, forming the foundation for all user-specific interactions on the platform.
 
@@ -123,3 +124,20 @@ Key Entities and Their Relationships
 
     Review System
     This allows users to leave reviews and ratings for properties after their stay. It contributes significantly to building trust and transparency within the platform, helping future guests make informed decisions and providing valuable feedback for hosts.
+
+# API Security
+
+    Authentication
+    Authentication ensures that only legitimate users can access their accounts and specific functionalities. This is critical for protecting user data, as it verifies a user's identity before granting access to their personal information, saved preferences, and booking history. Without strong authentication, user accounts could be compromised, leading to unauthorized access and data breaches.
+
+    Authorization
+    Authorization defines what authenticated users are allowed to do within the application. It ensures that users can only perform actions and access resources for which they have explicit permission. This is vital for securing various operations, such as ensuring a host can only manage their own property listings, or a guest can only view and modify their own bookings, preventing unauthorized modifications or access to sensitive business logic.
+
+    Rate Limiting
+    Rate limiting controls the number of requests a user or IP address can make to the API within a specific timeframe. This is crucial for protecting against abusive behaviors like brute-force attacks on login endpoints, denial-of-service (DoS) attacks, and excessive data scraping. By limiting requests, we can maintain the availability and performance of the API, safeguarding against overwhelming the server and ensuring fair access for all legitimate users.
+
+    Data Encryption
+    Encryption involves transforming data into a coded format to prevent unauthorized access. This is paramount for securing payments and sensitive user data both in transit (e.g., via HTTPS/SSL for API communication) and at rest (e.g., encrypting sensitive fields in the database). Encryption ensures that even if data is intercepted or accessed illicitly, it remains unreadable and unusable, thereby protecting financial information and personal privacy.
+
+    Input Validation and Sanitization
+    This involves checking and cleaning user input to prevent malicious data from entering the system or being processed incorrectly. It's critical for preventing common web vulnerabilities like SQL Injection and Cross-Site Scripting (XSS). By validating and sanitizing all input, we protect the database from malicious queries and safeguard users from client-side attacks, maintaining the integrity and security of the entire application.
