@@ -52,3 +52,21 @@ This project leverages a modern tech stack to ensure robustness and scalability:
 8. DevOps Engineer
 
     Responsibilities: Facilitates cooperation between development and operations teams. Builds and manages Continuous Integration/Continuous Delivery (CI/CD) pipelines to automate and accelerate the software delivery process, ensuring application stability.
+
+# Technology Stack
+
+    1. Django: A high-level Python web framework used for building the RESTful API and overall backend structure.
+
+    2. Django REST Framework: Provides tools for creating and managing robust RESTful APIs, facilitating CRUD operations for various data.
+
+    3. PostgreSQL: A powerful relational database used for efficient and reliable data storage of all project information (users, properties, bookings, etc.).
+
+    4. GraphQL: Offers a flexible and efficient query mechanism for interacting with the backend, allowing clients to request exactly the data they need.
+
+    5. Celery: Used for handling asynchronous tasks, such as sending notifications, processing payments in the background, or other time-consuming operations without blocking the main application flow.
+
+    6. Redis: Utilized for caching strategies to reduce database load and improve application performance, and also for session management.
+
+    7. Docker: A containerization tool used for consistent development and deployment environments, ensuring the application runs uniformly across different machines.
+
+    8. CI/CD Pipelines: Automated pipelines (using tools like GitHub Actions, not explicitly named here but implied by CI/CD context) for testing and deploying code changes, ensuring efficient and reliable delivery of updates.
